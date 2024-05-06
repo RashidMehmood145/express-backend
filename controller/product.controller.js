@@ -1,5 +1,4 @@
-import express from "express";
-import mongoose from "mongoose";
+
 import Product from "../models/product.model.js";
 
 const createProduct = async (req, res) => {
@@ -56,8 +55,8 @@ const deleteProductById = async (req, res) => {
   }
 };
 
-export default {
-    createProduct,
+export {
+  createProduct,
   getSingleProductById,
   getAllProducts,
   updateProductById,
